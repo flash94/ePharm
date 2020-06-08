@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MailToPatient"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Pharmacist Email"
+        android:focusable="false"
+        android:backgroundTint="@color/colorGray"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userImage"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/subjectEt"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="text"
+        android:hint="Subject"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/messageEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:hint="enter message here"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:inputType="text"
+        android:minHeight="170dp"
+        android:background="@drawable/shape_rectangle"/>
+
+    <Button
+        android:id="@+id/sendMessageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="send Message"
+        android:background="@drawable/button_states"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="@color/colorText"/>
+
+
+</LinearLayout>

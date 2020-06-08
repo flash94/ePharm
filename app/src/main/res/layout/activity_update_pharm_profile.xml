@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdatePharmProfile">
+
+    <!--ImageView: Add Item Image-->
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/userImage"
+        android:layout_centerHorizontal="true"
+        android:layout_width="170dp"
+        android:scaleType="centerCrop"
+        app:c_border="true"
+        app:c_border_width="1dp"
+        app:c_border_color="@color/colorGray1"
+        app:c_background_color="@color/backgroundcolor"
+        android:src="@drawable/ic_add_photo"
+        android:padding="10dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <!--EditText: Input Item Name-->
+    <TextView
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Email"
+        android:focusable="false"
+        android:backgroundTint="@color/colorGray"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userImage"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/firstNameEt"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="text"
+        android:hint="First Name"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEt"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/lastNameEt"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameEt"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/phoneNoEt"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastNameEt"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/pharmFeeEt"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Consultation Fee"
+        android:inputType="number"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNoEt"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/expEt"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Years of Experience"
+        android:inputType="number"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pharmFeeEt"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <!--Add New Item -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_save"
+        android:layout_margin="10dp"/>
+
+
+
+</RelativeLayout>

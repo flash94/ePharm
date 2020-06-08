@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- no item shown when no Item has been added-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/noItemYet"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="No item added yet"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_centerVertical="true"/>-->
+
+
+    <!-- Recyclerview: shows items-->
+
+    <!-- FAB button: Start AddItemActivity to add/edit record-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addedPatientsRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/single_user" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addUserBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/backgroundcolor"
+        android:layout_alignParentEnd="true"
+        app:pressedTranslationZ="12dp"
+        android:elevation="4dp"
+        android:tint="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_user_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
